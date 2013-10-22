@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="./TemplateGeral.xhtml"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html">
+
+    <ui:define name="content">
+        <p:panelGrid columns="2">  
+    <f:facet name="header">  
+       Pessoa  
+    </f:facet>  
+  
+    <h:outputLabel for="firstname" value="Nome: *" />  
+    <p:inputText id="firstname" value="" label="Firstname" />  
+  
+    <h:outputLabel for="surname" value="Sobremone: *" />  
+    <p:inputText id="surname" value="" required="true" label="Surname"/>  
+  
+    <f:facet name="footer">  
+        <p:commandButton type="button" value="Salvar" icon="ui-icon-check" style="margin:0"/>  
+    </f:facet>  
+</p:panelGrid>  
+  
+    </ui:define>
+
+</ui:composition>
